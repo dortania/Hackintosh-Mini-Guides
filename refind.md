@@ -1,6 +1,7 @@
 # Setting up rEFInd
 
-* I do not support the use of rEFInd with OpenCore, this is just to shut up those who won't stop complaining that OpenCore injects data into all OSes but for some reason are too lazy to press F8 at boot.  Using rEFInd can break both bless and Startup Disk, and can be concidered a security risk.
+* We do not support the use of rEFInd with OpenCore, this is just to shut up those who won't stop complaining that OpenCore injects data into all OSes but for some reason are too lazy to press F8 at boot.  Using rEFInd can break both bless and Startup Disk, and can be concidered a security risk.
+* Please note that rEFInd has also been know to break macOS booting
 
 To get started we're going to need:
 
