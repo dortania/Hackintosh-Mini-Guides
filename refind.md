@@ -5,13 +5,14 @@
 
 To get started we're going to need:
 
-* Working copy of either Linux or Windows(we won't be setting up rEFind in macOS)
+* Working copy of either Linux or Windows(we won't be setting up rEFind in macOS besides the basic files, you must run the scripts in Windows or Linux)
 * [rEFInd files](http://sourceforge.net/projects/refind/files/0.12.0/refind-bin-0.12.0.zip/download)
 
 
 And depending on your preferred OS, you've got a couple options for setting up rEFInd:
 
 * [macOS Setup](/extras/refind.md#macos-setup)
+  * Note this is only partial setup
 * [Linux Setup](/extras/refind.md#linux-setup)
 * [Windows Setup](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
@@ -41,7 +42,7 @@ If you have issues with installation, see [Installing rEFInd Manually Using Linu
 
 # rEFInd Configuration
 
-Now that rEFInd's installed, we'll want to grab the `refind.conf-sample` and rename it to `refind.conf` if you haven't already. Next open it up in a text editor and scroll to the bottom of the file, you'll find some example bootloader setups. For us we care about adding OpenCore to the picker, note that BOOTx64.efi **must** be booted first before OpenCore.
+Now that rEFInd's installed, we'll want to grab the `refind.conf-sample` and rename it to `refind.conf` if you haven't already. Next open it up in a text editor and scroll to the bottom of the file, you'll find some example bootloader setups. For us we care about adding OpenCore to the picker, note that Bootstrap.efi **must** be booted first before OpenCore.
 
 Example of a refind.conf supporting OpenCore, Arch and Windows:
 
@@ -50,7 +51,7 @@ Example of a refind.conf supporting OpenCore, Arch and Windows:
 timeout 10
 
 menuentry "trashOS" {
-    loader \EFI\OC\BOOTx64.efi
+    loader \EFI\OC\Bootstrap\Bootstrap.efi
 }
 
 menuentry "i uSe aRcH bTw" {
