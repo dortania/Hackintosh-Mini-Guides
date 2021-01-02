@@ -22,8 +22,8 @@ And depending on your preferred OS, you've got a couple options for setting up r
 * Move OpenCore's `BOOTx64.efi` to EFI/OC/
 * Rename `refind_x64.efi` to `BOOTx64.efi`
 * Move rEFInd's `BOOTx64.efi`to EFI/BOOT
-* Add the folders `drivers_x64`, `tools` and `icons` to EFI/BOOT
-* Grab refind.conf-sample and add it to EFI/OC
+* Add the folders `drivers_x64`, `tools_x64` and `icons` to EFI/BOOT
+* Grab refind.conf-sample and add it to EFI/BOOT
 * Rename `refind.conf-sample`to `refind.conf`
 
 Once done, you should get something like this:
